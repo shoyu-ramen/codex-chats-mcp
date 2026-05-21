@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-chats-mcp"
+version = "0.1.0"
+description = "MCP server to list, search, archive, rename, export, and delete ChatGPT conversations and Codex Cloud tasks."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Ross Kuehl" }]
+keywords = ["mcp", "model-context-protocol", "chatgpt", "codex", "claude"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = ["mcp[cli]>=1.0"]
+
+[project.scripts]
+codex-chats-mcp = "codex_chats_mcp:main"
+
+[project.urls]
+Homepage = "https://github.com/shoyu-ramen/codex-chats-mcp"
+Issues = "https://github.com/shoyu-ramen/codex-chats-mcp/issues"
+
+[tool.setuptools]
+py-modules = ["codex_chats_mcp"]
