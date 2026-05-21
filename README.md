@@ -1,5 +1,10 @@
 # codex-chats-mcp
 
+[![PyPI version](https://img.shields.io/pypi/v/codex-chats-mcp.svg)](https://pypi.org/project/codex-chats-mcp/)
+[![Python versions](https://img.shields.io/pypi/pyversions/codex-chats-mcp.svg)](https://pypi.org/project/codex-chats-mcp/)
+[![License: MIT](https://img.shields.io/pypi/l/codex-chats-mcp.svg)](https://github.com/shoyu-ramen/codex-chats-mcp/blob/main/LICENSE)
+[![Publish to PyPI](https://github.com/shoyu-ramen/codex-chats-mcp/actions/workflows/publish.yml/badge.svg)](https://github.com/shoyu-ramen/codex-chats-mcp/actions/workflows/publish.yml)
+
 An MCP server for managing ChatGPT conversations and Codex Cloud tasks (chats) from any MCP-compatible client — Claude Code, Codex, Cline, etc.
 
 ChatGPT's web UI lets you archive chats but the "Delete all" button only wipes visible ones, and Codex Cloud has no per-task delete at all. This server wraps the internal `chatgpt.com/backend-api` endpoints so you can list, search, rename, archive, export, and **permanently delete** both kinds of chats from your agent.
@@ -9,13 +14,13 @@ ChatGPT's web UI lets you archive chats but the "Delete all" button only wipes v
 ## Install
 
 ```bash
-pip install git+https://github.com/shoyu-ramen/codex-chats-mcp
+pip install codex-chats-mcp
 ```
 
 Or with `uv`:
 
 ```bash
-uv tool install git+https://github.com/shoyu-ramen/codex-chats-mcp
+uv tool install codex-chats-mcp
 ```
 
 This installs a `codex-chats-mcp` executable.
